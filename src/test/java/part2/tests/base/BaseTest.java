@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import part2.PageObjectModel.BasePage;
-import part2.PageObjectModel.LoginPage;
+import com.base.BasePage;
+import com.saucedemo.pages.LoginPage;
 
 public class BaseTest {
 

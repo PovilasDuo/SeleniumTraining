@@ -1,5 +1,6 @@
-package part2.PageObjectModel;
+package com.saucedemo.pages;
 
+import com.base.BasePage;
 import org.openqa.selenium.By;
 
 //Page Object Model

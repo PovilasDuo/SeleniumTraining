@@ -2,7 +2,7 @@ package part2.tests.tests.products;
 
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
-import part2.PageObjectModel.ProductsPage;
+import com.saucedemo.pages.ProductsPage;
 import part2.tests.base.BaseTest;
 
 public class ProductsTest extends BaseTest {
