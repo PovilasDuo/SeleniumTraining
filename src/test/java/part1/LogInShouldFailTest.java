@@ -36,8 +36,8 @@ public class LogInShouldFailTest {
         password.sendKeys("admin123");
 
         driver.findElement(By.tagName("button")).click();
-        ////
-        Thread.sleep(2000);
+        ////Test logic above/Test validation, assertion, below
+        Thread.sleep(2000); //Not recommended because it is a hard stop/ Used only for demonstration purposes
 
         String actualResult = driver.findElement(By.tagName("h6")).getText();
         String expectedResult = "Dashboard";
