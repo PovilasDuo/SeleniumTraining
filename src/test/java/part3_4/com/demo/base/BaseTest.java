@@ -15,6 +15,7 @@ import com.base.BasePage;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import static com.base.BasePage.delay;
 import static utilities.Utility.setUtilityDriver;
@@ -30,6 +31,9 @@ public class BaseTest {
     public void setUp() {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //implicit wait
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
     }
 
     @BeforeMethod
